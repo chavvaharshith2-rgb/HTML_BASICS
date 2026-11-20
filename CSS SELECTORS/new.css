@@ -1,0 +1,67 @@
+#heading1 {
+    background-color: lightblue;
+    color: purple;
+    text-align: center;
+    padding: 10px;
+}
+
+#heading2 {
+    color: purple;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Class Selector */
+.first {
+    background-color: lightgreen;
+    color: green;
+}
+
+.second {
+    color: black;
+}
+
+/* Element Selector */
+p {
+    font-size: 14px;
+}
+
+/* Descendant Selector */
+div b {
+    color: black;
+}
+
+/* Child Selector */
+.child > p {
+    color: brown;
+}
+
+/* Adjacent Sibling Selector */
+h3 + p {
+    color: red;
+}
+
+/* General Sibling Selector */
+h3 ~ p {
+    background-color: lightgray;
+}
+
+/* Attribute Selector */
+input[type="text"] {
+    background-color: lightyellow;
+}
+
+input[type="password"] {
+    background-color: lightblue;
+}
+
+input[type="email"] {
+    background-color: lightgreen;
+}
+
+/* Pseudo-Class Selector */
+button:hover {
+    background-color: yellow;
+    color: red;
+    cursor: pointer;
+}

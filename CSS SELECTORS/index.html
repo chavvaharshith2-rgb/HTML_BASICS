@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <h1 id="heading1">CSS Selectors Demonstration</h1>
+    <h1 id="heading2">CSS Selectors Demonstration</h1>
+    
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors Demonstration</title>
+
+    <style>
+        body {
+            background-color: #dfffff;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Element Selector */
+        p {
+            color: black;
+            font-size: 13px;
+        }
+
+        /* Class Selector */
+        .myclass {
+            color: darkgreen;
+        }
+
+        .highlight {
+            background-color: lightgreen;
+            padding: 5px;
+        }
+
+        /* Grouping Selector */
+        h2, h3 {
+            color: darkgreen;
+        }
+
+        /* Descendant Selector */
+        section p {
+            background-color: lightyellow;
+            padding: 8px;
+        }
+
+        /* Child Selector */
+        section > p {
+            color: darkblue;
+        }
+
+        /* Sibling Selector */
+        h3 + p {
+            color: brown;
+            font-weight: bold;
+        }
+
+        h3 ~ p {
+            background-color: lightyellow;
+        }
+
+        /* Attribute Selector */
+        input[type="text"] {
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 2px solid gray;
+            border-radius: 5px;
+        }
+
+        input[type="password"] {
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        input[type="email"] {
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        a[href] {
+            color: darkblue;
+            font-weight: bold;
+        }
+
+        /* Pseudo-Class Selector */
+        a:hover {
+            color: red;
+        }
+
+        input:focus {
+            background-color: lightyellow;
+        }
+
+        /* Pseudo-Element Selector */
+        h2::first-letter {
+            color: blue;
+        }
+
+        /* Universal Selector */
+        * {
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: lightblue;
+            color: navy;
+            padding: 10px;
+            border: 1px solid skyblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Selectors Demonstration</h1>
+
+    <h3>1. Element Selector</h3>
+    <p>The paragraph demonstrates the element selector.</p>
+
+    <h3>2. Class Selector</h3>
+    <p class="highlight">First paragraph using class selector</p>
+    <p class="myclass">Second paragraph using the same class</p>
+
+    <h3>3. Grouping Selector</h3>
+    <p>This paragraph is styled using a grouping selector.</p>
+
+    <h3>4. Descendant and Child Selectors</h3>
+
+    <section>
+        <p>Direct child paragraph</p>
+
+        <div>
+            <p>Nested paragraph inside section</p>
+        </div>
+    </section>
+
+    <h3>5. Sibling Selectors</h3>
+
+    <h3>Sibling Selector Heading</h3>
+    <p>First paragraph immediately after h3</p>
+    <p>Second paragraph after h3</p>
+    <p>Third paragraph after h3</p>
+
+    <h3>6. Attribute Selectors</h3>
+
+    <input type="text" placeholder="Enter your name">
+    <br>
+
+    <input type="password" placeholder="Enter password">
+    <br>
+
+    <input type="email" placeholder="Enter email">
+    <br>
+
+    <a href="https://www.google.com">Visit Google</a>
+
+    <h3>7. Pseudo-Class Selectors</h3>
+
+    <p>Move your mouse over the link to see the hover effect.</p>
+    <a href="https://www.google.com">Hover over this link</a>
+
+    <h3>8. Pseudo-Element Selectors</h3>
+
+    <p>This paragraph demonstrates CSS pseudo-elements.</p>
+
+</body>
+</html>
